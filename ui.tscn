@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://dopawco8qiwbf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_madps"]
+bg_color = Color(1, 0.376471, 0, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.376471, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agut1"]
+bg_color = Color(0, 0.545098, 1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.545098, 1, 1)
+
+[node name="UI" type="Node"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Red" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_madps")
+
+[node name="Blue" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_agut1")

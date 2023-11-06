@@ -1,0 +1,972 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc5ib2ovrtnom"]
+
+[ext_resource type="Texture2D" uid="uid://blyl1cisgo3m" path="res://grid.jpg" id="1_cmulx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sswal"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_62kyi"]
+albedo_texture = ExtResource("1_cmulx")
+uv1_scale = Vector3(1.5, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5o8fq"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="LineOfWallUnit1" type="Node3D" parent="."]
+
+[node name="WallUnit1" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit1"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit1"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit2" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit2"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit2"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit3" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit3"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit3"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit4" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit4"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit4"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit5" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit5"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit5"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit6" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit6"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit6"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit7" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit7"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit7"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit8" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit8"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit8"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit9" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit9"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit9"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit10" type="StaticBody3D" parent="LineOfWallUnit1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit10"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit10"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit11" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit11"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit11"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit12" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit12"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit12"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit13" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit13"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit13"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit14" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit14"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit14"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit15" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit15"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit15"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit16" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit16"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit16"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit17" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit17"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit17"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit18" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit18"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit18"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit19" type="StaticBody3D" parent="LineOfWallUnit1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit1/WallUnit19"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit1/WallUnit19"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="LineOfWallUnit2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="WallUnit1" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit1"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit1"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit2" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit2"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit2"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit3" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit3"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit3"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit4" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit4"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit4"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit5" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit5"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit5"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit6" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit6"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit6"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit7" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit7"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit7"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit8" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit8"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit8"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit9" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit9"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit9"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit10" type="StaticBody3D" parent="LineOfWallUnit2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit10"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit10"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit11" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit11"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit11"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit12" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit12"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit12"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit13" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit13"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit13"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit14" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit14"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit14"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit15" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit15"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit15"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit16" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit16"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit16"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit17" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit17"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit17"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit18" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit18"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit18"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit19" type="StaticBody3D" parent="LineOfWallUnit2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit2/WallUnit19"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit2/WallUnit19"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="LineOfWallUnit3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="WallUnit1" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit1"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit1"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit2" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit2"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit2"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit3" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit3"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit3"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit4" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit4"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit4"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit5" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit5"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit5"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit6" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit6"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit6"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit7" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit7"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit7"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit8" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit8"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit8"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit9" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit9"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit9"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit10" type="StaticBody3D" parent="LineOfWallUnit3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit10"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit10"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit11" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit11"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit11"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit12" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit12"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit12"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit13" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit13"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit13"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit14" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit14"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit14"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit15" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit15"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit15"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit16" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit16"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit16"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit17" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit17"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit17"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit18" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit18"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit18"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit19" type="StaticBody3D" parent="LineOfWallUnit3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit3/WallUnit19"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit3/WallUnit19"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="LineOfWallUnit4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="WallUnit1" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit1"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit1"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit2" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit2"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit2"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit3" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit3"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit3"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit4" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit4"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit4"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit5" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit5"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit5"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit6" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit6"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit6"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit7" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit7"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit7"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit8" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit8"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit8"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit9" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit9"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit9"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit10" type="StaticBody3D" parent="LineOfWallUnit4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit10"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit10"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit11" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit11"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit11"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit12" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit12"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit12"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit13" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit13"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit13"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit14" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit14"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit14"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit15" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit15"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit15"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit16" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit16"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit16"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit17" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit17"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit17"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit18" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit18"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit18"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit19" type="StaticBody3D" parent="LineOfWallUnit4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit4/WallUnit19"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit4/WallUnit19"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="LineOfWallUnit5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="WallUnit1" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit1"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit1"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit2" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit2"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit2"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit3" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit3"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit3"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit4" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit4"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit4"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit5" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit5"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit5"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit6" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit6"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit6"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit7" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit7"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit7"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit8" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit8"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit8"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit9" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit9"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit9"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit10" type="StaticBody3D" parent="LineOfWallUnit5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit10"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit10"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit11" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit11"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit11"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit12" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit12"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit12"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit13" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit13"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit13"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit14" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit14"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit14"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit15" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit15"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit15"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit16" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit16"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit16"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit17" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit17"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit17"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit18" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit18"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit18"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
+
+[node name="WallUnit19" type="StaticBody3D" parent="LineOfWallUnit5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LineOfWallUnit5/WallUnit19"]
+shape = SubResource("BoxShape3D_sswal")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LineOfWallUnit5/WallUnit19"]
+material_override = SubResource("StandardMaterial3D_62kyi")
+mesh = SubResource("BoxMesh_5o8fq")
